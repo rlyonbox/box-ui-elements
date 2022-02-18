@@ -2,7 +2,7 @@ import React from 'react';
 
 import IconReturnToAdminConsole from '../IconReturnToAdminConsole';
 
-describe('icons/left-sidebar', () => {
+describe('icons/collapsible-sidebar', () => {
     test('should correctly render default icon', () => {
         const wrapper = shallow(<IconReturnToAdminConsole />);
 

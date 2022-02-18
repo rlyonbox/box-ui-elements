@@ -8,9 +8,8 @@
 import * as React from 'react';
 
 import Tooltip from '../../components/tooltip';
-
-import LeftSidebarLinkCallout from '../left-sidebar/LeftSidebarLinkCallout';
-import type { Callout } from '../left-sidebar/Callout';
+import type { Callout } from './Callout';
+import CollapsibleSidebarLinkCallout from './CollapsibleSidebarLinkCallout';
 
 type Props = {
     /** Callout element used in the menu. */
@@ -38,13 +37,13 @@ function CollapsibleSidebarItem(props: Props) {
     if (callout) {
         const calloutChildren = expanded ? expandedElement : collapsedElement;
         return (
-            <LeftSidebarLinkCallout
-                attachmentPosition="bottom left"
+            <CollapsibleSidebarLinkCallout
+                attachmentPosition="bottom Collapsible"
                 callout={callout}
                 targetAttachmentPosition="bottom right"
             >
                 {calloutChildren}
-            </LeftSidebarLinkCallout>
+            </CollapsibleSidebarLinkCallout>
         );
     }
 

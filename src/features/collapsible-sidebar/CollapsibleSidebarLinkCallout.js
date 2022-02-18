@@ -1,16 +1,15 @@
+import './styles/LeftSidebarLinkCallout.scss';
+
+import classNames from 'classnames';
 // @flow
 import * as React from 'react';
-import classNames from 'classnames';
 import TetherComponent from 'react-tether';
 
+import TETHER_POSITIONS from '../../common/tether-positions';
+import type { TetherPosition } from '../../common/tether-positions';
 import PlainButton from '../../components/plain-button';
 import IconClose from '../../icons/general/IconClose';
-import TETHER_POSITIONS from '../../common/tether-positions';
-
-import type { TetherPosition } from '../../common/tether-positions';
 import type { Callout } from './Callout';
-
-import './styles/LeftSidebarLinkCallout.scss';
 
 type Props = {
     attachmentPosition?: TetherPosition,
@@ -25,7 +24,7 @@ type State = {
     isShown: boolean,
 };
 
-class LeftSidebarLinkCallout extends React.Component<Props, State> {
+class CollapsibleSidebarLinkCallout extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = { isShown: true };
@@ -85,4 +84,4 @@ class LeftSidebarLinkCallout extends React.Component<Props, State> {
     }
 }
 
-export default LeftSidebarLinkCallout;
+export default CollapsibleSidebarLinkCallout;

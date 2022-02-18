@@ -1,22 +1,21 @@
+import { color, text } from '@storybook/addon-knobs';
 /* eslint-disable no-underscore-dangle */
 // @ts-nocheck
 import React from 'react';
 import styled, { ThemeProvider, keyframes } from 'styled-components';
-import { color, text } from '@storybook/addon-knobs';
 
-import * as vars from '../styles/variables';
-import defaultTheme from '../styles/theme';
 import BoxButton from '../components/button';
+import IconAllFiles from '../features/collapsible-sidebar/icons/IconAllFiles';
+import IconDevConsole from '../features/collapsible-sidebar/icons/IconDevConsole';
+import IconFavorites from '../features/collapsible-sidebar/icons/IconFavorites';
+import IconNotes from '../features/collapsible-sidebar/icons/IconNotes';
+import IconRecents from '../features/collapsible-sidebar/icons/IconRecents';
+import IconTrash from '../features/collapsible-sidebar/icons/IconTrash';
 import BoxLogo from '../icon/logo/BoxLogo';
+import defaultTheme from '../styles/theme';
+import * as vars from '../styles/variables';
 import { createTheme } from './createTheme';
 import notes from './createTheme.stories.md';
-
-import IconAllFiles from '../features/left-sidebar/icons/IconAllFiles';
-import IconNotes from '../features/left-sidebar/icons/IconNotes';
-import IconRecents from '../features/left-sidebar/icons/IconRecents';
-import IconTrash from '../features/left-sidebar/icons/IconTrash';
-import IconFavorites from '../features/left-sidebar/icons/IconFavorites';
-import IconDevConsole from '../features/left-sidebar/icons/IconDevConsole';
 
 const Swatch = styled.div`
     display: inline-block;

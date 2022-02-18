@@ -228,9 +228,9 @@ const allSections = [
         components: () => [
             '../src/features/beta-feedback/BetaFeedbackBadge.js',
             '../src/features/classification/Classification.js',
+            '../src/features/collapsible-sidebar/CollapsibleSidebar.js',
             '../src/features/collapsible-sidebar/CollapsibleSidebarLogo.js',
             '../src/features/invite-collaborators-modal/InviteCollaboratorsModal.js',
-            '../src/features/left-sidebar/LeftSidebar.js',
             '../src/features/header-flyout/HeaderFlyout.js',
             '../src/features/message-center/components/MessageCenter.js',
             '../src/features/presence/Presence.js',

@@ -17,7 +17,7 @@ import IconSharedWithMe from '../IconSharedWithMe';
 import IconSynced from '../IconSynced';
 import IconTrash from '../IconTrash';
 
-describe('icons/left-sidebar', () => {
+describe('icons/collaspsible-sidebar', () => {
     [
         {
             Icon: IconAdminConsole,

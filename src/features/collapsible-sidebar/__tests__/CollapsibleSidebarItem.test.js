@@ -1,10 +1,9 @@
-import React from 'react';
 import { shallow } from 'enzyme';
+import React from 'react';
 
-import LeftSidebarLinkCallout from '../../left-sidebar/LeftSidebarLinkCallout';
 import Tooltip from '../../../components/tooltip';
-
 import CollapsibleSidebarItem from '../CollapsibleSidebarItem';
+import CollapsibleSidebarLinkCallout from '../CollapsibleSidebarLinkCallout';
 
 describe('components/core/collapsible-sidebar/CollapsibleSidebarItem', () => {
     const getWrapper = (props = {}) => shallow(<CollapsibleSidebarItem {...props} />);
@@ -88,6 +87,6 @@ describe('components/core/collapsible-sidebar/CollapsibleSidebarItem', () => {
             },
         });
 
-        expect(sidebar.find(LeftSidebarLinkCallout).exists()).toBeTruthy();
+        expect(sidebar.find(CollapsibleSidebarLinkCallout).exists()).toBeTruthy();
     });
 });
