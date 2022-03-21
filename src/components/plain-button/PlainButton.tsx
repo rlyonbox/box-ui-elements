@@ -29,6 +29,7 @@ const PlainButton = ({
     const buttonProps: { [key: string]: boolean | ((event: React.SyntheticEvent<HTMLButtonElement>) => void) } = {};
     if (isDisabled) {
         buttonProps['aria-disabled'] = true;
+        buttonProps.disabled = true;
         buttonProps.onClick = (event: React.SyntheticEvent<HTMLButtonElement>) => {
             event.preventDefault();
             event.stopPropagation();
